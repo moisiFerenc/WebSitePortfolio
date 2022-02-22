@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #ffffff;
-    --clr-dark: #041348;
-    --clr-accent: #1afe49;
+    --clr-light: #000;
+    --clr-dark: #ffffff;
+    --clr-accent: #00f832;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -213,6 +213,11 @@ h3 { font-size: var(--fs-h3) }
     margin: 0 auto;
 }
 
+
+.about-me__img {
+    box-shadow: var(--bs);
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -228,8 +233,22 @@ h3 { font-size: var(--fs-h3) }
         grid-area: title;
     }
     
+        
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+    
+
     .about-me__img {
         grid-area: img;
+        position: relative;
+        z-index: 2;
     }
 }
 
