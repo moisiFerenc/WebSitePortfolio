@@ -13,14 +13,17 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #ffffff;
+    --clr-dark: #041348;
+    --clr-accent: #1afe49;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --boxShadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+                 0.125em 0.125em 0.25em rgba(0,0,0,.15);;
 }
 
 @media (min-width: 800px) {
@@ -71,9 +74,6 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: .025em;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
 }
 
 .section__title--Intro {
@@ -102,14 +102,50 @@ h3 { font-size: var(--fs-h3) }
     display: none;
 }
 
+.Intro__img {
+    box-shadow: var(--boxShadow);
+}
+
 .Intro {
     position: relative;
+}
+
+.section__subtitle--intro {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    .Intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .Intro__img {
+        grid-area: img;
+        min-width: 250px;
+    }    
+    
+    .section__subtitle--Intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 }
 
 
 
 
-
+/*My Skills*/
 
 
 
