@@ -58,6 +58,27 @@ img {
 strong {
     font-weight: bold;
   }
+
+/*button*/
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
 /* Typography */
 
 h1,
@@ -145,17 +166,70 @@ h3 { font-size: var(--fs-h3) }
 
 
 
-/*My Skills*/
+/*My services*/
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(pics/lei.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+/*That lil line sub the title*/
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+}
+
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .service + .service {
+        margin-left: 2em;
+    }
+}
 
 
 
 
+/*abput me*/
 
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-
-
-
-
-
-
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+    
+    .section__title--about {
+        grid-area: title;
+    }
+    
+    .about-me__img {
+        grid-area: img;
+    }
+}
 
