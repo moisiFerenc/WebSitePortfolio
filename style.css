@@ -14,8 +14,8 @@
     --fw-bold: 900;
     
     --clr-light: #000;
-    --clr-dark: #ffffff;
-    --clr-accent: #00f832;
+    --clr-dark: #FFF;
+    --clr-accent: #b99671;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -170,9 +170,9 @@ h3 { font-size: var(--fs-h3) }
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(pics/lei.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
+    /*background-image: url(pics/coding.png);
+    background-size: cover;*/
+    background-blend-mode: lighten;
     color: var(--clr-light);
     text-align: center;
 }
