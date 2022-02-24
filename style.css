@@ -37,6 +37,20 @@
 
 /* General styles */
 
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+.centerme {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 html {
     scroll-behavior: smooth;
@@ -405,12 +419,15 @@ header {
 
 .portfolio-item-indiv {
 
-    padding: 0 5em 5em;
+    padding: 0 1em 1em;
     max-width: 1000px;
     margin: 0 auto;
 
 }
-
+/*The replit element*/
+.coderunner {
+    position: relative;
+}
 /* footer */
 
 .footer {
