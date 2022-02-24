@@ -16,12 +16,14 @@
 <body>
 
     <header>
+        
         <div class="logo">
-            
+            <img src="pics/LOGO.JPG" alt="My Logo">
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="burger"></span>
+            <span class="hamburger"></span>
         </button>
+
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -31,6 +33,7 @@
             </ul>
         </nav>
     </header>
+    
     <!--introduction-->
     <section class="Intro" id="home">
         <h1 class="section__title section__title--Intro">
@@ -92,8 +95,9 @@
 
         <div class="portfolio">
             <!--Portfolio item 01-->
-            <a href="#" class="portfolio__item">
+            <a href="data_structure.html" class="portfolio__item">
                 <img src="pics\IMG_20210619_173834.jpg" alt="my work " class="portfolio__img">
+                <!--<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@FerencMoisi/UnpleasantThirdGravity?lite=true"></iframe>-->
             </a>
             <!--Portfolio item 02-->
             <a href="#" class="portfolio__item">
@@ -128,16 +132,20 @@
 
     </section>
 
+    
     <!--Fotter-->
-    <footer>
-        <a href="mailto:moisiferenc@gmail.com">moisiferenc@gmail.com</a>
+    <footer class="footer">
+        <a href="mailto:moisiferenc@gmail.com" class="footer__link">     moisiferenc@gmail.com <i class="fab fa-paper-plane"></i></a>
         <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" href="https://github.com/moisiFerenc">GitHub</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/moisi-ferenc-b58284216/">linkedin</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/ferko.moisi.5/">Facebook</a></li>
-
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/moisiFerenc"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/moisi-ferenc-b58284216/"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/ferko.moisi.5/"><i class="fab fa-facebook"></i></a></li>
+            
 
         </ul>
     </footer>
+
+<script src="index.js"></script>
+
 </body>
 </html>
