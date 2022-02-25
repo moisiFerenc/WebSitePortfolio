@@ -265,6 +265,8 @@ header {
 }
 
 .section__subtitle--intro {
+    width: 500px;
+
     display: inline-block;
 }
 
