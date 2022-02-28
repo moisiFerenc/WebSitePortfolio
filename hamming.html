@@ -45,8 +45,27 @@
 
 
     <div class="portfolio-item-indiv">
-        <p></p>
-        <img src="pics/lei.jpg" alt="">
+        <p>Hamming code is a set of error-correction codes that can be used to detect and correct the errors that can occur when the data is moved or stored from the sender to the receiver. It is technique developed by R.W. Hamming for error correction.</p>
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>Calculation of the number of redundant bits.</li>
+            <img src="project imgs/hamming 2.png" alt="">
+            <li>Positioning the redundant bits.</li>
+            <p>The r redundant bits placed at bit positions of powers of 2</p>
+            <li>Parity checking.</li>
+            <p>Parity bits are calculated based upon the data bits and the redundant bits using the same rule as during generation of c1,c2 ,c3 ,c4 etc</p>
+            <li>Error detection and correction</li>
+            <p>The decimal equivalent of the parity bit's binary values is calculated. If it is 0, there is no error. Otherwise, the decimal value gives the bit position which has error. The bit is flipped to get the correct message.</p>
+        </ol>
+
+        <p><strong> 2^r ≥ m + r + 1    =>> where, r = redundant bit, m = data bit</strong></p>
+        <img src="project imgs/Hamming code.png" alt="">
+
+
+        <p><strong>Here you can try it:</strong></p>
+        <iframe frameborder="" width="100%" height="600px" src="https://replit.com/@FerencMoisi/nemerdekelmar?lite=true" class="centerme"></iframe>
+
+
     </div>
 
 

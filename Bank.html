@@ -37,16 +37,68 @@
     <!--introduction-->
     <section class="Intro" id="home">
         <h1 class="section__title section__title--Intro">
-            Linked List <strong>project</strong>
+            Banking application <strong>project</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--Intro">szias</p>
+        <p class="section__subtitle section__subtitle--Intro">C# - entity framework - .NET</p>
         <img src="pics/_SDP9327.jpg" alt="" class="Intro__img">
     </section>
 
 
     <div class="portfolio-item-indiv">
-        <p></p>
-        <img src="pics/lei.jpg" alt="">
+        <p><strong>Project structure</strong></p>
+        <p>This project use Entity Framework to access the SQL database. The project use Code First method, because we don't use an already existing big database. 
+            Any changes in code, will need a migration update. </p>
+
+
+        <p>The database connection is made by this part of the code. 
+            We have a Post class, where we can add members, by the constructor. </p>
+
+        <p>There is also an important thing, we have to override the toString method, to print an element correctly, and legibly.</p>
+            <img src="project imgs/codepice.png" alt="">
+
+
+
+            <p>Here is the database structure:</p>
+        <img src="project imgs/bank_table_structure.png" alt="">
+        
+
+
+
+        <p>For the GUI, I used the WindowsForms.</p>
+
+
+        <p><strong>The features are the follows :</strong></p>
+        <ol>
+            <li><strong>Registration</strong>
+            <p>You can add:</p>
+            <ol>
+                <li>username(email substitute)</li>
+                <li>First and Last name</li>
+                <li>password(checks that if the password entered twice matches)</li>
+                <li>select birthday</li>
+                <li>(Also, the registration date is saved automatically)</li>
+            </ol>
+            <img src="project imgs/register.png" alt="">
+            <p>With the submit button, the program will add the user data to the database</p></li>
+
+            <li><strong>Login page</strong>
+                <p>Here, you can type your username, and password. But also access the registration. 
+                    The mute button can turn off the background music.</p>
+            <img src="project imgs/homepage.png" alt=""></li>
+
+            <li><strong>Customer page functions</strong>
+                <p>You can add money into your bank account</p>
+            <img src="project imgs/addpeeenz.png" alt="">
+                <p>You can also take out your money</p>
+            <img src="project imgs/takeoutmoney.png" alt="">
+                <p>If you no longer want to be a customer, you can delete your account. The program will erase the user from the database</p>
+            <img src="project imgs/Delete_bank.png" alt="">
+            </li>
+            <li><strong>Admin page</strong>
+                <p>If you type as username 'ADMIN' and password '1', you will access the admin mode, where you can monitor and manage the users.</p>
+                <img src="project imgs/admin.png" alt="">
+            </li>
+        </ol>
     </div>
 
 
